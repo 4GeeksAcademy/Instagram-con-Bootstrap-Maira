@@ -1,0 +1,52 @@
+.navbar{
+    background:rgb(239, 237, 237);
+}
+
+.btn btn-success{
+    margin-right:5px;
+}
+
+#lastOption{
+    color:red;
+}
+
+#Tab {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link active{
+    background:transparent;
+}
+
+button{
+    background:none;
+    border:none;
+    color:rgb(156, 153, 148);
+}
+
+#profile{
+    justify-content:center;
+    align-items:center;
+}
+
+img{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom:5px;
+} 
+
+.card-header{
+    font-weight:bold;
+}
+
+#cardImg, #cardImg1, #cardImg2{
+    margin:0;
+    border-radius:0;
+}
+
+.card-text{
+    font-size:small;
+}
