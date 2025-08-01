@@ -19,13 +19,19 @@
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary navbar-expand-md">
         <div class="container-fluid">
             <a class="navbar-brand"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
-            <form class="d-flex" role="search">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbardropdown justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
                 <button type="button" class="btn btn-success mx-3" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Create a New Post</button>
-                <div class="dropdown">
+                    data-bs-target="#exampleModal">Create a New Post
+                </button>
+                <div class="dropdown engranaje" >
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
                     <ul class="dropdown-menu">
@@ -36,6 +42,7 @@
                         <li><a class="dropdown-item" id="lastOption" href="#">Log out</a></li>
                     </ul>
                 </div>
+
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
@@ -48,7 +55,7 @@
                             <div class="modal-body">
                                 <label for="post" class="Caption">Caption:</label>
                                 <br />
-                                <textarea name="Caption" max-width="100%"
+                                <textarea name="Caption" max-width="100%" class="form-control"
                                     placeholder="Add the caption of your post here"></textarea>
                                 <br />
                                 <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
@@ -62,61 +69,57 @@
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
+
         </div>
     </nav>
 
     <ul class="nav mb-3" id="Tab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                type="button" role="tab" aria-controls="home" aria-selected="true"><i
-                    class="fa-solid fa-table-cells"></i></button>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"
+                    id="grid"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                type="button" role="tab" aria-controls="profile" aria-selected="false"><i
-                    class="fa-solid fa-square"></i></button>
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"
+                    id="square"></i></button>
         </li>
     </ul>
 
     <div class="tab-content" id="tabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"
-            tabindex="0">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
             <div class="container text-center">
-                <div class="row">
-                    <div class="col-4 col-md-4"><img
+                <div class="row row-cols-3 row-cols-md-2 row-cols-sm-1">
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_med0tx37Lq9ufspXIGKsA0A3WVIrMHY3ZA&s">
                     </div>
-                    <div class="col-4 col-md-4"><img
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://www.silviacongost.com/wp-content/uploads/2023/04/decalogo-claves-descubrir-como-saber-reconocer-identificar-amistades-verdaderas-buenos-amigos.jpg">
                     </div>
-                    <div class="col-4 col-md-4"><img
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnMdOhIFQv9paUvpjXJhtwIUq9jfjuhi6Fg&s">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 col-md-4"><img
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLH-QTRw_x9hzrYCGgPnDqbw4CDRhXhJCNw&s">
                     </div>
-                    <div class="col-4 col-md-4"><img
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68Wa8PvSeNFezggn-w3hStcSneSzuh23KFg&s">
                     </div>
-                    <div class="col-4 col-md-4"><img
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://img.freepik.com/vector-premium/pintura-escena-nocturna-luna-estrellas_1166304-56.jpg?semt=ais_hybrid&w=740">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 col-md-4"><img
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrGuBM-NPE0kJT3bAhauWkGyMILIWV3kmntA&s">
                     </div>
-                    <div class="col-4 col-md-4"><img
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://concepto.de/wp-content/uploads/2019/04/galaxia-universo-1-e1554807715900.jpg">
                     </div>
-                    <div class="col-4 col-md-4"><img
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12"><img
                             src="https://biblioteca.ulpgc.es/sites/default/files/attachments_files/espacio_violeta/book-3996723_960_720.jpg">
                     </div>
                 </div>
-            </div><br>
+            </div>
 
         </div>
         <div class="tab-pane fade" class="tab" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">

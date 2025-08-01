@@ -6,6 +6,10 @@
     margin-right:5px;
 }
 
+.engranaje{
+    display:inline-block;
+}
+
 #lastOption{
     color:red;
 }
@@ -22,7 +26,18 @@
 button{
     background:none;
     border:none;
-    color:rgb(156, 153, 148);
+    
+}
+
+#grid, #square {
+    color:rgb(157, 151, 151);
+}
+
+#square:hover{
+    color:rgb(92, 92, 238);
+}
+#grid:hover{
+    color:rgb(92, 92, 238);
 }
 
 #profile{
